@@ -20,12 +20,16 @@
 
             // Start the connection
             $.connection.hub.start().done(function () {
-                console.log("signalr ready");
+                $('#messages').append('<li>SignalR started, wait for responess</li>'); 
             });
         });
 </script>
   
-  <div>    
+  <div>
+      <div>
+        Here is the example. Wait for messages now
+      </div>
+    
     <ul id="messages">
     </ul>
   </div>
